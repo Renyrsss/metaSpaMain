@@ -7,7 +7,11 @@ import terImg from "../assets/image 36.svg";
 import { GrCircleAlert } from "react-icons/gr";
 import { useState } from "react";
 
-function ModalDoctor({ openModal }) {
+import { observer } from "mobx-react-lite";
+
+import vars from "../store/vars";
+
+const ModalDoctor = observer(() => {
     const [isOpen, setIsOpen] = useState(true);
 
     const closeModal = () => setIsOpen(false);
@@ -29,7 +33,7 @@ function ModalDoctor({ openModal }) {
     ];
     return (
         <>
-            {isOpen && (
+            {vars.showEmergencyModal && (
                 <div className=' duration-300'>
                     <div className='fixed bg-black opacity-40 w-full h-full top-0 left-0'></div>
                     <div className=' fixed top-[50%] left-[50%] translate-[-50%] container m-auto bg-white w-[600px] p-[20px] rounded-2xl'>
@@ -38,7 +42,7 @@ function ModalDoctor({ openModal }) {
                                 Онлайн Консультации
                             </h1>
                             <div
-                                onClick={closeModal}
+                                onClick={vars.showEmergencyModalFunc}
                                 className=' cursor-pointer'>
                                 <MdOutlineClose className='text-[35px]' />
                             </div>
@@ -151,6 +155,6 @@ function ModalDoctor({ openModal }) {
             )}
         </>
     );
-}
+});
 
 export default ModalDoctor;

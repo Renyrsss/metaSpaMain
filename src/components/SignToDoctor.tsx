@@ -1,7 +1,11 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 
-function SignToDoctor() {
+import vars from "../store/vars";
+
+import { observer } from "mobx-react-lite";
+
+const SignToDoctor = observer(() => {
     const data = [
         "Дежурный терапевт",
         "Дежурный педиатр",
@@ -31,7 +35,10 @@ function SignToDoctor() {
                 <ul className=' rounded-[15px] bg-white text-[20px]'>
                     {data.map((item) => {
                         return (
-                            <li className=' cursor-pointer  border-b-[1px] border-b-gray-300  py-[15px] px-[20px] duration-300  hover:bg-purple-400 hover:text-white hover:rounded-[15px] '>
+                            <li
+                                onClick={vars.showEmergencyModalFunc}
+                                key={item}
+                                className=' cursor-pointer  border-b-[1px] border-b-gray-300  py-[15px] px-[20px] duration-300  hover:bg-purple-400 hover:text-white hover:rounded-[15px] '>
                                 {item}
                             </li>
                         );
@@ -40,6 +47,6 @@ function SignToDoctor() {
             </div>
         </div>
     );
-}
+});
 
 export default SignToDoctor;

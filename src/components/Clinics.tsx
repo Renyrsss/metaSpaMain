@@ -8,37 +8,134 @@ function Clinics() {
         <section className='container mx-auto mb-[40px]'>
             <p className=' mb-[40px] text-[33px] pt-[20px]'>Все клиники 8</p>
 
-            <div>
-                <div className='flex bg-white rounded-2xl py-[20px] text-[14px] text-gray-600 '>
-                    <div className='basis-[20%] flex items-center justify-center flex-none '>
-                        <img src={logo} alt='' className='w-[90px] ' />
-                    </div>
-                    <div className='basis-[50%] flex-none'>
-                        <p className=' text-[20px] mb-[14px]'>
-                            Медицинский центр Metaclinic
-                        </p>
-                        <p className=' mb-[20px]'>
-                            Metaclinic- полностью цифровая клиника в Казахстане,
-                            предлагающая пациентам уникальное сочетание комфорта
-                            и высококачественной медицинской помощи
-                        </p>
-                        <div className='flex items-center gap-[10px]'>
-                            <CiLocationOn className='text-[25px] text-purple-500' />
-                            <p>г.Астана, ул. Кабанбай батыра, 40</p>
+            <div className=' mb-[40px]'>
+                <div className='flex bg-white rounded-2xl py-[20px] pr-[30px] text-[14px] text-gray-600 '>
+                    <div className='basis-[80%] flex'>
+                        <div className='basis-[20%] flex items-center justify-center flex-none '>
+                            <img src={logo} alt='' className='w-[90px] ' />
+                        </div>
+                        <div className='basis-[80%] flex-none'>
+                            <p className=' text-[20px] mb-[14px]'>
+                                Медицинский центр Metaclinic
+                            </p>
+                            <p className=' mb-[20px] mr-[15px]'>
+                                Metaclinic- полностью цифровая клиника в
+                                Казахстане, предлагающая пациентам уникальное
+                                сочетание комфорта и высококачественной
+                                медицинской помощи
+                            </p>
+                            <div className='flex items-center gap-[10px]'>
+                                <CiLocationOn className='text-[25px] text-purple-500' />
+                                <p>г.Астана, ул. Кабанбай батыра, 40</p>
+                            </div>
                         </div>
                     </div>
-                    <div className='basis-[30%]  flex-none  '>
-                        <p className=' text-[20px] mb-[14px]'>График работы</p>
+                    <div className='basis-[20%]  flex flex-col    '>
+                        <div className='flex flex-col  w-full'>
+                            <p className=' text-[20px] mb-[14px]   '>
+                                График работы
+                            </p>
+                        </div>
                         <div className=' text-base/8 text-[14px]'>
-                            <div className='flex gap-[100px]'>
+                            <div className='flex gap-[50px]'>
                                 <p>Пн - Пт</p>
                                 <p>00:00 - 23:30</p>
                             </div>
-                            <div className='flex gap-[100px]'>
+                            <div className='flex gap-[50px]'>
                                 <p>Пн - Пт</p>
                                 <p>00:00 - 23:30</p>
                             </div>
-                            <div className='flex gap-[100px]'>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className=' mb-[40px] '>
+                <div className='flex bg-white rounded-2xl py-[20px] pr-[30px] text-[14px] text-gray-600 '>
+                    <div className='basis-[80%] flex'>
+                        <div className='basis-[20%] flex items-center justify-center flex-none '>
+                            <img src={logo} alt='' className='w-[90px] ' />
+                        </div>
+                        <div className='basis-[80%] flex-none'>
+                            <p className=' text-[20px] mb-[14px]'>
+                                Медицинский центр Metaclinic
+                            </p>
+                            <p className=' mb-[20px] mr-[15px]'>
+                                Metaclinic- полностью цифровая клиника в
+                                Казахстане, предлагающая пациентам уникальное
+                                сочетание комфорта и высококачественной
+                                медицинской помощи
+                            </p>
+                            <div className='flex items-center gap-[10px]'>
+                                <CiLocationOn className='text-[25px] text-purple-500' />
+                                <p>г.Астана, ул. Кабанбай батыра, 40</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='basis-[20%]  flex flex-col    '>
+                        <div className='flex flex-col  w-full'>
+                            <p className=' text-[20px] mb-[14px]   '>
+                                График работы
+                            </p>
+                        </div>
+                        <div className=' text-base/8 text-[14px]'>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className=' mb-[40px]'>
+                <div className='flex bg-white rounded-2xl py-[20px] pr-[30px] text-[14px] text-gray-600 '>
+                    <div className='basis-[80%] flex'>
+                        <div className='basis-[20%] flex items-center justify-center flex-none '>
+                            <img src={logo} alt='' className='w-[90px] ' />
+                        </div>
+                        <div className='basis-[80%] flex-none'>
+                            <p className=' text-[20px] mb-[14px]'>
+                                Медицинский центр Metaclinic
+                            </p>
+                            <p className=' mb-[20px] mr-[15px]'>
+                                Metaclinic- полностью цифровая клиника в
+                                Казахстане, предлагающая пациентам уникальное
+                                сочетание комфорта и высококачественной
+                                медицинской помощи
+                            </p>
+                            <div className='flex items-center gap-[10px]'>
+                                <CiLocationOn className='text-[25px] text-purple-500' />
+                                <p>г.Астана, ул. Кабанбай батыра, 40</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='basis-[20%]  flex flex-col    '>
+                        <div className='flex flex-col  w-full'>
+                            <p className=' text-[20px] mb-[14px]   '>
+                                График работы
+                            </p>
+                        </div>
+                        <div className=' text-base/8 text-[14px]'>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                            <div className='flex gap-[50px]'>
+                                <p>Пн - Пт</p>
+                                <p>00:00 - 23:30</p>
+                            </div>
+                            <div className='flex gap-[50px]'>
                                 <p>Пн - Пт</p>
                                 <p>00:00 - 23:30</p>
                             </div>

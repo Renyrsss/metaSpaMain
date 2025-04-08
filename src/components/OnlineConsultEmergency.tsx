@@ -5,7 +5,11 @@ import { FiAlertTriangle } from "react-icons/fi";
 
 import ModalDoctor from "./ModalDoctor";
 
-function OnlineConsultEmergency() {
+import vars from "../store/vars";
+
+import { observer } from "mobx-react-lite";
+
+const OnlineConsultEmergency = observer(() => {
     const [openModal, setOpenModal] = useState(false);
 
     function open() {
@@ -29,7 +33,9 @@ function OnlineConsultEmergency() {
                         <p className=' opacity-65 text-[25px] mb-[35px]'>
                             Средний стаж {">"} 10 лет
                         </p>
-                        <button className=' cursor-pointer bg-white text-purple-400 block flex gap-[5px] items-center p-[15px] rounded-[15px] text-[20px]'>
+                        <button
+                            onClick={vars.showEmergencyModalFunc}
+                            className=' cursor-pointer bg-white text-purple-400 block flex gap-[5px] items-center p-[15px] rounded-[15px] text-[20px]'>
                             <p className=''>Скорее записаться</p>{" "}
                             <p>
                                 <IoIosArrowForward className=' bg-purple-400 rounded-[100%] p-[5px] text-white text-[25px] text-center' />
@@ -39,9 +45,9 @@ function OnlineConsultEmergency() {
                     <img src={logo} alt='' />
                 </div>
             </section>
-            <ModalDoctor openModal />
+            <ModalDoctor />
         </>
     );
-}
+});
 
 export default OnlineConsultEmergency;
